@@ -1,12 +1,13 @@
 ﻿<html>
 <head>
 <title>Calc</title>
-<link rel="stylesheet" type="text/css" href="../css/main.css" />
+<link rel="stylesheet" type="text/css" href="./css/main.css" />
 </head>
 <body>
 <div class=wrap>
 <div class=header>
 <H1>Калькуляторы </H1>
+<hr>
 </div>
 <div class=content>
 <h2>Введите формулу</h2> </br>
@@ -88,9 +89,8 @@ $('.result1').html(data);
 });
 }
 </script>
-<div class=sidebar>
 </div>
+<div class=bottom><p class=foot align=center>© Мухамеджанов К. К.</p></div>
 </div>
-</div>
-</body>
+</body>                 
 </html>

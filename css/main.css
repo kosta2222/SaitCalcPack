@@ -15,7 +15,7 @@ float:left;
 
 body, html{
 
-font: 12px tahoma;
+font: 16px tahoma;
 margin: 0px;
 padding: 0px;
 background:#999900;
@@ -30,11 +30,11 @@ max-width: 900px;
 margin-left: auto;
 margin-right: auto;
 background:#CCCCCC;
-padding: 20px;
+padding: 0px;
 }
  
 .header{
-background:#CCCC99;
+background:#CCCC97;
 padding: 10px;
 
 }               
@@ -47,7 +47,7 @@ float:right;
  
 .content{
 float: left;
-width: 60%;
+width: 100%;
 background:#CCCC99;
 
 }
