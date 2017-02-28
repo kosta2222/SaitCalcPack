@@ -1,8 +1,8 @@
 /**
  * Created by papa on 03.02.2017.
  */
-//<!--<%@ page import="com.kosta.antlr.calc.CalcCl" %> !-->
-package com.kosta.antlr.calc;
+//<%@ page import="com.kosta.antlr.calc.CalcCl" %> !-->
+package com.kosta.antlr;
 import org.antlr.v4.runtime.ANTLRInputStream;
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.CommonTokenStream;
@@ -17,16 +17,16 @@ public class CalcCl
     public double calculate(String st){
 
         CharStream cs = new ANTLRInputStream(st);
-        CalcLexer lexer = new CalcLexer(cs);
+        CalculatorLexer lexer = new CalculatorLexer(cs);
 
         CommonTokenStream tokens = new CommonTokenStream(lexer);
-        CalcParser parser = new CalcParser(tokens);
+        CalculatorParser parser = new CalculatorParser(tokens);
 
         ParseTree tree = parser.input(); // begin parsing at // rule
 // print LISP-style tree
         System.out.println(tree.toStringTree(parser));
 
-        CalcBaseVisitorImpl visitor = new CalcBaseVisitorImpl();
+        CalculatorBaseVisitorImpl visitor = new CalculatorBaseVisitorImpl();
         double result= visitor.visit(tree);
         return result;
 
